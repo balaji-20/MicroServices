@@ -9,7 +9,10 @@ import com.balaji.dto.ProductRequest;
 import com.balaji.model.Product;
 import com.balaji.repository.ProductRepository;
 
+import lombok.extern.slf4j.Slf4j;
+
 @Service
+@Slf4j
 public class ProductService {
 	
 	@Autowired
@@ -21,7 +24,9 @@ public class ProductService {
                 .description(productRequest.getDescription())
                 .price(productRequest.getPrice())
                 .build();
-		return productRepository.save(product);
+		product= productRepository.save(product);
+		log.info("Product {} is saved", product.getId());
+		return product;
 	}
 
 	public List<Product> getAllProducts() {
