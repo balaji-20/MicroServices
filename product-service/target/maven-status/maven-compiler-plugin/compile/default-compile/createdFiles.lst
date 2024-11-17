@@ -1,8 +1,0 @@
-com\balaji\dto\ProductRequest.class
-com\balaji\controller\ProductController.class
-com\balaji\service\ProductService.class
-com\balaji\ProductServiceApplication.class
-com\balaji\model\Product$ProductBuilder.class
-com\balaji\repository\ProductRepository.class
-com\balaji\ServletInitializer.class
-com\balaji\model\Product.class
